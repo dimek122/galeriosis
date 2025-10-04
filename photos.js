@@ -269,7 +269,7 @@ const photos = [
     alt: '',
     category: 'face',
     date: '',
-    description: 'aca10
+    description: 'aca10'
   },
    {
     id: 35,
@@ -339,3 +339,4 @@ const photos = [
   // Tambahkan foto lain sesuai kebutuhan
 
 ];
+
