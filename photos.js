@@ -230,14 +230,16 @@ const photos = [
     category: 'hari guru',
     date: '',
     description: 'hariguru (1)'
-  },{
+  },
+  {
     id: 30,
     src: 'images/hariguru2.jpg',
     alt: '',
     category: 'hari guru',
     date: '',
     description: 'hariguru (2)'
-  },{
+  },
+  {
     id: 31,
     src: 'images/hariguru3.jpg',
     alt: '',
@@ -245,6 +247,95 @@ const photos = [
     date: '',
     description: 'hariguru (3)'
   },
+   {
+    id: 32,
+    src: 'images/arya.jpg',
+    alt: '',
+    category: 'face',
+    date: '',
+    description: 'arya'
+  },
+   {
+    id: 33,
+    src: 'images/arya2.jpg',
+    alt: '',
+    category: 'face',
+    date: '',
+    description: 'arya2'
+  },
+   {
+    id: 34,
+    src: 'images/aca10.jpg',
+    alt: '',
+    category: 'face',
+    date: '',
+    description: 'aca10
+  },
+   {
+    id: 35,
+    src: 'images/arya3.jpg',
+    alt: '',
+    category: 'face',
+    date: '',
+    description: 'arya3'
+  },
+   {
+    id: 36,
+    src: 'images/asih.jpg',
+    alt: '',
+    category: 'face',
+    date: '',
+    description: 'asih'
+  },
+   {
+    id: 37,
+    src: 'images/asih2.jpg',
+    alt: '',
+    category: 'face',
+    date: '',
+    description: 'asih2'
+  },
+   {
+    id: 38,
+    src: 'images/dimas.jpg',
+    alt: '',
+    category: 'face',
+    date: '',
+    description: 'dimas'
+  },
+   {
+    id: 39,
+    src: 'images/pdl.jpg',
+    alt: '',
+    category: 'PDL',
+    date: '',
+    description: 'pdl'
+  },
+   {
+    id: 40,
+    src: 'images/pdl2.jpg',
+    alt: '',
+    category: 'PDL',
+    date: '',
+    description: 'pdl2'
+  },
+   {
+    id: 41,
+    src: 'images/pdl3.jpg',
+    alt: '',
+    category: 'PDL',
+    date: '',
+    description: 'pdl3'
+  },
+   {
+    id: 42,
+    src: 'images/zahran2.jpg',
+    alt: '',
+    category: 'face',
+    date: '',
+    description: 'zahran2'
+  },
   
   // Tambahkan foto lain sesuai kebutuhan
+
 ];
