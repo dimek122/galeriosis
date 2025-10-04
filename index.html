@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galeri Kenangan OSIS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+  <h1>Galeri OSIS</h1>
+
+  <!-- Kontrol Musik -->
+  <div class="music-player" aria-label="Pemutar musik kenangan OSIS">
+    <audio id="audioPlayer" preload="none" loop>
+      <source src="music/kenangan.mp3" type="audio/mpeg" />
+      Browser Anda tidak mendukung pemutar audio.
+    </audio>
+    <button id="musicToggleBtn" aria-pressed="false" aria-label="Putar musik kenangan OSIS">
+      ▶️ Putar Musik
+    </button>
+  </div>
+
+  <div class="controls">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Cari berdasarkan nama acara atau kata kunci..."
+      aria-label="Pencarian foto"
+    />
+    <select id="categoryFilter" aria-label="Filter kategori foto">
+      <option value="all">Semua Kategori</option>
+      <option value="face">face</option>
+      <option value="seleksi junior">seleksi junior</option>
+      <option value="hari guru">hari guru</option>
+      <option value="-">-</option>
+      <option value="-">-</option>
+      <option value="-">-</option>
+    </select>
+    <button id="toggleViewBtn" aria-pressed="false" aria-label="Ubah mode tampilan">Mode List</button>
+  </div>
+ 
+  </header>
+
+  <main>
+    <section id="gallery" class="grid-view" aria-live="polite" aria-label="Galeri foto OSIS">
+      <!-- Foto akan dimuat di sini oleh JS -->
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" aria-modal="true" role="dialog" aria-hidden="true" tabindex="-1">
+    <button id="lightboxClose" aria-label="Tutup tampilan foto">&times;</button>
+    <button id="lightboxPrev" aria-label="Foto sebelumnya">&#10094;</button>
+    <figure>
+      <img id="lightboxImage" src="" alt="" />
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+    <button id="lightboxNext" aria-label="Foto berikutnya">&#10095;</button>
+  </div>
+
+  <script src="photos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
