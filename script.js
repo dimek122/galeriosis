@@ -22,9 +22,9 @@ const musicSelect = document.getElementById('musicSelect');
 
 // Daftar lagu lokal (sesuaikan dengan file di folder music/)
 const musicTracks = [
-  { value: 'kenangan.mp3', label: 'Kenangan (Default)' },
-  { value: 'nostalgia.mp3', label: 'Nostalgia' },
-  { value: 'inspirasi.mp3', label: 'Inspirasi' }
+  { value: 'kenangan.mp3', label: '17 tulus (Default)' },
+  { value: 'nostalgia.mp3', label: 'span' },
+  { value: 'inspirasi.mp3', label: 'monokrom' }
   // Tambah lagu baru: { value: 'namafile.mp3', label: 'Nama Lagu' }
 ];
 
@@ -249,3 +249,4 @@ window.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('resize', () => {
   renderGallery(); // Re-render jika perlu
 });
+
