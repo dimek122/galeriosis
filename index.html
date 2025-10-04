@@ -2,24 +2,28 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <title>MUSEUM OSIS</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-  <h1>MUSEUM OSIS</h1>
+    <!-- Music Player di kiri -->
+    <div class="music-player" aria-label="Pemutar musik kenangan OSIS">
+      <audio id="audioPlayer" preload="none" loop>
+        <source src="music/kenangan.mp3" type="audio/mpeg" />
+        Browser Anda tidak mendukung pemutar audio.
+      </audio>
+      <button id="musicToggleBtn" aria-pressed="false" aria-label="Putar musik kenangan OSIS">
+        ▶️ Putar Musik
+      </button>
+    </div>
 
-  <!-- Kontrol Musik -->
-  <div class="music-player" aria-label="Pemutar musik kenangan OSIS">
-    <audio id="audioPlayer" preload="none" loop>
-      <source src="music/kenangan.mp3" type="audio/mpeg" />
-      Browser Anda tidak mendukung pemutar audio.
-    </audio>
-    <button id="musicToggleBtn" aria-pressed="false" aria-label="Putar musik kenangan OSIS">
-      ▶️ Putar Musik
-    </button>
-  </div>
+    <!-- Judul di tengah -->
+    <h1>MUSEUM OSIS</h1>
+  </header>
 
   <div class="controls">
     <input
@@ -39,8 +43,6 @@
     </select>
     <button id="toggleViewBtn" aria-pressed="false" aria-label="Ubah mode tampilan">Mode List</button>
   </div>
- 
-  </header>
 
   <main>
     <section id="gallery" class="grid-view" aria-live="polite" aria-label="Galeri foto OSIS">
@@ -63,4 +65,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
