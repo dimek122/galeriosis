@@ -13,9 +13,13 @@
     <!-- Music Player di kiri -->
     <div class="music-player" aria-label="Pemutar musik kenangan OSIS">
       <audio id="audioPlayer" preload="none" loop>
-        <source src="music/kenangan.mp3" type="audio/mpeg" />
+        <source src="" type="audio/mpeg" />
         Browser Anda tidak mendukung pemutar audio.
       </audio>
+      <select id="musicSelect" aria-label="Pilih lagu">
+        <option value="">Pilih Lagu</option>
+        <!-- Opsi akan diisi oleh JS -->
+      </select>
       <button id="musicToggleBtn" aria-pressed="false" aria-label="Putar musik kenangan OSIS">
         ▶️ Putar Musik
       </button>
@@ -65,3 +69,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
